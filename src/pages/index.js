@@ -1,7 +1,5 @@
-import { CustContact } from "./CustContact";
-import { Evaluations } from "./Evaluations";
-import { Refer } from "./Refer";
-import { Rewards } from "./Rewards";
-import { Timeline } from "./Timeline";
-
-export { CustContact, Evaluations, Refer, Rewards, Timeline };
+export { default as CustContact } from "./CustContact";
+export { default as Evaluations } from "./Evaluations";
+export { default as Refer } from "./Refer";
+export { default as Rewards } from "./Rewards";
+export { default as Timeline } from "./Timeline";

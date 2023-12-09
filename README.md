@@ -12,6 +12,6 @@ Currently, two official plugins are available:
 # NPM installs
 
 npm install --legacy-peer-deps three
-npm install -D --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component framer-motion
+npm install -D --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component framer-motion react-router-dom
 npm install --legacy-peer-deps -D postcss autoprefixer
 Tailwind was already installed during Vite
