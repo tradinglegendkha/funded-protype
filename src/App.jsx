@@ -1,6 +1,12 @@
-import { Navbar, Header } from "./components";
+import { Navbar, Header, Testimonials, Carousel } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+
+const slides = [
+  "https://i.ibb.co/XXR8kzF/3.png",
+  "https://i.ibb.co/B3s7v4h/2.png",
+  "https://i.ibb.co/yg7BSdM/4.png",
+];
 
 function App() {
   return (
@@ -9,8 +15,13 @@ function App() {
         <div className="bg-header-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Header />
-          {/* which will include the review */}
+          {/* <Carousel autoSlide={true}>
+            {slides.map((s) => (
+              <img src={s} alt="s" />
+              ))}
+            </Carousel> */}
         </div>
+        <Testimonials />
         {/* tools of the trade, and supported market */}
         {/* benefits body */}
         {/* evaluations */}

@@ -7,9 +7,9 @@ const Header = () => {
   return (
     <div className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 my-10`}
+        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start my-10`}
       >
-        <BullCanvas />
+        {/* <BullCanvas /> */}
         <div className="flex justify-end">
           <div className="flex flex-col">
             <h4 className="text-[24px] text-gray-200">

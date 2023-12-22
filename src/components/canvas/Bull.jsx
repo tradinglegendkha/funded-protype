@@ -13,8 +13,6 @@ import CanvasLoader from "../../utils/Loader";
 const Bull = ({ isMobile }) => {
   const bull = useGLTF("./charging_bull/scene.gltf");
 
-  const test_bull = useGLTF("./test_bull/scene.gltf");
-
   return (
     <mesh>
       <hemisphereLight intensity={2.15} groundColor="black" />
@@ -29,8 +27,8 @@ const Bull = ({ isMobile }) => {
       /> */}
       <primitive
         object={bull.scene}
-        scale={isMobile ? 0.7 : 2.3}
-        position={isMobile ? [0, -3, -2.2] : [0, -0.6, -0.4]}
+        scale={isMobile ? 0.7 : 2.4}
+        position={isMobile ? [0, -3, -2.2] : [0, -0.9, -0.4]}
         rotation={[0.0, 1, 0.1]}
       />
     </mesh>
@@ -60,15 +58,15 @@ const BullCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[1, 2]}
       camera={{ fov: 45, near: 0.1, far: 200, position: [-4, 3, 6] }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />} s>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          enableRotate={false}
+          // maxPolarAngle={Math.PI / 2}
+          // minPolarAngle={Math.PI / 2}
         />
         <Bull isMobile={isMobile} />
       </Suspense>
