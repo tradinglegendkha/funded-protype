@@ -1,4 +1,4 @@
-import { Navbar, Header, Testimonials, Carousel } from "./components";
+import { Navbar, Header, Testimonials, SupportedBrokers } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
@@ -22,7 +22,7 @@ function App() {
             </Carousel> */}
         </div>
         <Testimonials />
-        {/* tools of the trade, and supported market */}
+        <SupportedBrokers />
         {/* benefits body */}
         {/* evaluations */}
         {/* FAQ */}

@@ -1,3 +1,14 @@
+// import {
+//   logo_ninjatrader,
+//   logo_tradovate,
+//   logo_tradingview,
+//   logo_rithmic,
+// } from "../assets";
+import logo_ninjatrader from "../assets/logo_ninjatrader.png";
+import logo_tradeovate from "../assets/logo_tradeovate.png";
+import logo_tradingview from "../assets/logo_tradingview.png";
+import logo_rithmic from "../assets/logo_rithmic.png";
+
 export const navLinks = [
   {
     id: "evaluations",
@@ -53,5 +64,24 @@ export const testimonial = [
     icon: "",
     reference:
       "For some people passing an evaluation is easy, but for me it was a huge milestone. It was the first step into becoming the profitable trader I want to be. Therefor I decided to make this little piece for my office to remind me everyday where my journey started. Thanks ETF",
+  },
+];
+
+export const brokers = [
+  {
+    title: "Ninja Trader",
+    icon: logo_ninjatrader,
+  },
+  {
+    title: "Tradovate",
+    icon: logo_tradeovate,
+  },
+  {
+    title: "TradingView",
+    icon: logo_tradingview,
+  },
+  {
+    title: "Rithmic",
+    icon: logo_rithmic,
   },
 ];
