@@ -27,7 +27,7 @@ const Bull = ({ isMobile }) => {
       /> */}
       <primitive
         object={bull.scene}
-        scale={isMobile ? 0.7 : 2.4}
+        scale={isMobile ? 0.7 : 2.0}
         position={isMobile ? [0, -3, -2.2] : [0, -0.9, -0.4]}
         rotation={[0.0, 1, 0.1]}
       />

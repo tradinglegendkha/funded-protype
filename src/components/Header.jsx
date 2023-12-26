@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../utils/styles";
 import { BullCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 
 const Header = () => {
   return (
@@ -9,7 +10,6 @@ const Header = () => {
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start my-10`}
       >
-        {/* <BullCanvas /> */}
         <div className="flex justify-end">
           <div className="flex flex-col">
             <h4 className="text-[24px] text-gray-200">
@@ -49,6 +49,10 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full h-screen flex mx-[500px]">
+        {/* <EarthCanvas /> */}
+        <BullCanvas />
       </div>
     </div>
   );

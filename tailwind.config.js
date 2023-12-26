@@ -19,6 +19,7 @@ export default {
       },
       backgroundImage: {
         "header-pattern": "url('/src/assets/background.jpg')",
+        "new-header": "url('/src/assets/testheader.jpg')",
       },
     },
   },
