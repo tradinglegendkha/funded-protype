@@ -1,4 +1,12 @@
-import { Navbar, Header, Testimonials, SupportedBrokers } from "./components";
+import {
+  Navbar,
+  Header,
+  Testimonials,
+  SupportedBrokers,
+  StarsCanvas,
+  WindCanvas,
+  WhyUs,
+} from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
@@ -8,17 +16,17 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-new-header bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Header />
-          {/* <Carousel autoSlide={true}>
-            {slides.map((s) => (
-              <img src={s} alt="s" />
-              ))}
-            </Carousel> */}
+          <div className="relative z-0">
+            <Header />
+            {/* <WindCanvas /> */}
+          </div>
+          <StarsCanvas />
         </div>
         <Testimonials />
         <SupportedBrokers />
-        {/* benefits body */}
-        {/* evaluations */}
+        {/* social media that mentions wolf */}
+        <WhyUs />
+        {/* EvaluationsHeader */}
         {/* FAQ */}
       </div>
     </BrowserRouter>

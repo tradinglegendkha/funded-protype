@@ -41,7 +41,7 @@ const Testimonials = () => {
         </button>
         <div className="">
           <div className="bg-gray-500 p-8 rounded-xl shadow-md mx-auto max-w-5xl w-full">
-            <div>
+            {/* <div>
               <h3 className="text-lg font-bold mb-2">
                 {testimonial[currentTestimonial].name}
               </h3>
@@ -58,7 +58,7 @@ const Testimonials = () => {
                   className="mt-4 mx-auto w-12 h-12 rounded-full"
                 />
               )}
-            </div>
+            </div> */}
           </div>
         </div>
         <button
