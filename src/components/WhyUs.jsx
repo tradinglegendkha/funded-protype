@@ -30,7 +30,7 @@ const WhyUs = () => {
             </h1>
             <div className="leading-[2rem]">
               <p>
-                Why risk few thousands of your personal money to trade futures{" "}
+                Why risk few thousands of your personal money to trade futures
                 when you can buy an evalutation in which you learn and grow with
                 us?
               </p>

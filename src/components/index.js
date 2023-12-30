@@ -6,6 +6,7 @@ import SupportedBrokers from "./SupportedBrokers";
 import { StarsCanvas } from "./canvas";
 import { WindCanvas } from "./canvas";
 import WhyUs from "./WhyUs";
+import EvaluationsHeader from "./EvaluationsHeader";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   StarsCanvas,
   WindCanvas,
   WhyUs,
+  EvaluationsHeader,
 };

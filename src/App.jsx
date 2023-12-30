@@ -6,6 +6,7 @@ import {
   StarsCanvas,
   WindCanvas,
   WhyUs,
+  EvaluationsHeader,
 } from "./components";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
@@ -26,7 +27,7 @@ function App() {
         <SupportedBrokers />
         {/* social media that mentions wolf */}
         <WhyUs />
-        {/* EvaluationsHeader */}
+        <EvaluationsHeader displayCount={3} />
         {/* FAQ */}
       </div>
     </BrowserRouter>
