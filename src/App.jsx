@@ -8,6 +8,14 @@ import {
   WhyUs,
   EvaluationsHeader,
 } from "./components";
+import {
+  OneStepEval,
+  FastStepEval,
+  EODEval,
+  StaticEval,
+  DiamondHandsEval,
+} from "./constants/evalcon";
+
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 
@@ -21,14 +29,16 @@ function App() {
             <Header />
             {/* <WindCanvas /> */}
           </div>
-          <StarsCanvas />
+          {/* <StarsCanvas /> */}
         </div>
         <Testimonials />
         <SupportedBrokers />
         {/* social media that mentions wolf */}
         <WhyUs />
-        <EvaluationsHeader displayCount={3} />
+        <EvaluationsHeader evaluations={OneStepEval.slice(0, 3)} />
+        <EvaluationsHeader evaluations={EODEval.slice(0, 3)} />
         {/* FAQ */}
+        {/* <Footer /> */}
       </div>
     </BrowserRouter>
   );

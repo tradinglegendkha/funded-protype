@@ -6,6 +6,17 @@ import { textVariant } from "../utils/motion";
 import { styles } from "../utils/styles";
 import { RocketAsteroidCanvas } from "./canvas";
 
+const NumberedBulletPoint = ({ number, content }) => (
+  <div className="flex items-start mt-3">
+    <div className="rounded-full bg-emerald-900 flex items-center justify-center h-8 w-8 mr-3">
+      <p className="text-stone-300">{number}</p>
+    </div>
+    <div style={{ maxWidth: "calc(100% - 40px)" }}>
+      <p>{content}</p>
+    </div>
+  </div>
+);
+
 const WhyUs = () => {
   return (
     <motion.div variants={textVariant()}>
@@ -18,31 +29,46 @@ const WhyUs = () => {
             <h1 className="text-[33px] bg-slate-800 rounded-md px-3 inline-block">
               Why Futures?
             </h1>
-            <div className="leading-[2rem]">
-              <p>Futures is virtually open for 24 hours and 6 days a week.</p>
-              <p>Theres no time decay like in traditional options.</p>
-              <p>Plus you do not need the $25000 to have no PDT</p>
+            <div className="leading-[2rem] light-white border-2 border-teal-900 p-2 rounded-md mt-3 inline-block">
+              <NumberedBulletPoint
+                number="1"
+                content="Futures is virtually open for 24 hours and 6 days a week."
+              />
+              <NumberedBulletPoint
+                number="2"
+                content="Theres no time decay like in traditional options."
+              />
+              <NumberedBulletPoint
+                number="3"
+                content="Plus you do not need the $25000 to have no PDT"
+              />
             </div>
           </div>
           <div>
             <h1 className="text-[33px] bg-slate-800 rounded-md px-3 inline-block">
               Why Us?
             </h1>
-            <div className="leading-[2rem]">
-              <p>
-                Why risk few thousands of your personal money to trade futures
-                when you can buy an evalutation in which you learn and grow with
-                us?
-              </p>
-              <p>
-                You don't day trade? We are one of the few prop firms that
-                offers swing account
-              </p>
-              <p>Get paid multiple times per month</p>
-              <p>No news trading restrictions</p>
-              <p>
-                Bunch of competitions, givaways, and sales. Join our discord!
-              </p>
+            <div className="leading-[2rem] light-white border-2 border-teal-900 p-2 rounded-md mt-3 inline-block">
+              <NumberedBulletPoint
+                number="1"
+                content="No need to risk thousands of dollars to risk in future when you can buy an evalutation with the fraction of the cost"
+              />
+              <NumberedBulletPoint
+                number="2"
+                content="We are one of the few prop firms that offers swing account"
+              />
+              <NumberedBulletPoint
+                number="3"
+                content="Get paid multiple times per month"
+              />
+              <NumberedBulletPoint
+                number="4"
+                content="No news trading restrictions"
+              />
+              <NumberedBulletPoint
+                number="5"
+                content="Bunch of competitions, giveaways, and sales. Join our discord!"
+              />
             </div>
           </div>
         </div>
