@@ -85,3 +85,34 @@ export const brokers = [
     icon: logo_rithmic,
   },
 ];
+
+export const Frequently = [
+  {
+    question: "Do you have a free trial?",
+    answer:
+      "Yes. We offer a 14 day free trial so you can get ready for your evaluation by trading a simulation account. You will be provided with a 250K Fast Track account for your trial. You cannot qualify for an elite account from a trial account. There is only one trial allowed per trader. Click here to sign up for the free trial.",
+  },
+  {
+    question: "What are the rules?",
+    answer:
+      "Depending on which evaluation you choose the rules can vary. Please see our products page for details on each evaluation type.",
+  },
+  {
+    question: "What happens if I hit my drawdown?",
+    answer:
+      "No problem! Simply purchase a reset and try again. Note: There are no resets in Elite accounts or Fast Track evaluations.",
+  },
+  {
+    question: "How long do I need to trade before I pass?",
+    answer: "5 days or more for all evaluations.",
+  },
+  {
+    question: "How do I get paid?",
+    answer:
+      "Once you qualify for an elite account we send payments through Deel via ACH transfer. View payout details.",
+  },
+  {
+    question: "What are the Elite (qualified) account rules?",
+    answer: "Please view our elite account rules page for information.",
+  },
+];

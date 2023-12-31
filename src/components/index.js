@@ -7,6 +7,7 @@ import { StarsCanvas } from "./canvas";
 import { WindCanvas } from "./canvas";
 import WhyUs from "./WhyUs";
 import EvaluationsHeader from "./EvaluationsHeader";
+import Faq from "./Faq";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   WindCanvas,
   WhyUs,
   EvaluationsHeader,
+  Faq,
 };
