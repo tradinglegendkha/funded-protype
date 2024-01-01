@@ -76,6 +76,10 @@ export const FastStepEval = [
     max_drawdown: "$750",
     profit_target: "$2000",
     max_positions: "2 minis | 20 micros",
+    title: "Fast Track Evaluations",
+    description:
+      "1 step, 5 minimum days traded, maximum of 14 days. Funded follows intraday unrealized profit trailing drawdown",
+    all_rules: "https://elitetraderfunding.com/fast-track/",
   },
   {
     name: "100k Eval",
@@ -163,6 +167,10 @@ export const StaticEval = [
     max_drawdown: "$625",
     profit_target: "$2000",
     max_positions: "2 minis | 20 micros",
+    title: "Fast Track Evaluations",
+    description:
+      "No trailing drawdown, static minimum balance, 5 minimum days traded. Funded also has static",
+    all_rules: "https://elitetraderfunding.com/static/",
   },
   {
     name: "150k Eval",
@@ -181,5 +189,9 @@ export const DiamondHandsEval = [
     profit_target: "$5000",
     daily_loss: "$1500",
     max_positions: " minis | micros",
+    title: "Fast Track Evaluations",
+    description:
+      "Allowed to hold overnight and over the weekend, 5 minimum days traded, EOD trailing drawdown, and daily loss limit. Funded follows also follows this",
+    all_rules: "https://elitetraderfunding.com/diamondhands/",
   },
 ];

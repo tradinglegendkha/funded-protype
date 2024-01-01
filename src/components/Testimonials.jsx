@@ -6,14 +6,12 @@ import { useState, useEffect } from "react";
 const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  // Function to go to the next testimonial
   const nextTestimonial = () => {
     setCurrentTestimonial(
       (prevTestimonial) => (prevTestimonial + 1) % testimonial.length
     );
   };
 
-  // Function to go to the previous testimonial
   const prevTestimonial = () => {
     setCurrentTestimonial((prevTestimonial) =>
       prevTestimonial === 0 ? testimonial.length - 1 : prevTestimonial - 1
@@ -40,15 +38,15 @@ const Testimonials = () => {
           &lt;
         </button>
         <div className="">
-          <div className="bg-gray-500 p-8 rounded-xl shadow-md mx-auto max-w-5xl w-full">
-            {/* <div>
+          <div className="bg-gray-900 p-8 rounded-xl shadow-md max-w-5xl w-full">
+            <div>
               <h3 className="text-lg font-bold mb-2">
                 {testimonial[currentTestimonial].name}
               </h3>
-              <p className="text-gray-900 mb-4">
+              <p className="text-gray-500 mb-4">
                 {testimonial[currentTestimonial].date}
               </p>
-              <p className="text-gray-800">
+              <p className="text-gray-300">
                 {testimonial[currentTestimonial].reference}
               </p>
               {testimonial[currentTestimonial].icon && (
@@ -58,15 +56,23 @@ const Testimonials = () => {
                   className="mt-4 mx-auto w-12 h-12 rounded-full"
                 />
               )}
-            </div> */}
+            </div>
           </div>
         </div>
+
         <button
           onClick={nextTestimonial}
           className="bg-gray-900 rounded-full w-12 h-12 flex items-center justify-center text-white focus:outline-none"
         >
           &gt;
         </button>
+      </div>
+      <div className="text-center text-[10px] text-stone-500 mt-2">
+        <p>
+          Testimonials appearing on this website may not be representative of
+          other clients or customers and are not a guarantee of future
+          performance or success.
+        </p>
       </div>
     </div>
   );

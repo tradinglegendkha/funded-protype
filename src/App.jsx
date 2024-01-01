@@ -7,14 +7,10 @@ import {
   WindCanvas,
   WhyUs,
   EvaluationsHeader,
+  Faq,
+  Footer,
 } from "./components";
-import {
-  OneStepEval,
-  FastStepEval,
-  EODEval,
-  StaticEval,
-  DiamondHandsEval,
-} from "./constants/evalcon";
+import { OneStepEval, EODEval } from "./constants/evalcon";
 
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
@@ -29,7 +25,7 @@ function App() {
             <Header />
             {/* <WindCanvas /> */}
           </div>
-          {/* <StarsCanvas /> */}
+          <StarsCanvas />
         </div>
         <Testimonials />
         <SupportedBrokers />
@@ -37,8 +33,8 @@ function App() {
         <WhyUs />
         <EvaluationsHeader evaluations={OneStepEval.slice(0, 3)} />
         <EvaluationsHeader evaluations={EODEval.slice(0, 3)} />
-        {/* FAQ */}
-        {/* <Footer /> */}
+        <Faq />
+        <Footer />
       </div>
     </BrowserRouter>
   );
