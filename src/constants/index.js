@@ -8,11 +8,13 @@ import logo_ninjatrader from "../assets/logo_ninjatrader.png";
 import logo_tradeovate from "../assets/logo_tradeovate.png";
 import logo_tradingview from "../assets/logo_tradingview.png";
 import logo_rithmic from "../assets/logo_rithmic.png";
+import { CustContact, Evaluations, Refer, Rewards, Timeline } from "../pages";
 
 export const navLinks = [
   {
     id: "evaluations",
     title: "Evaluations",
+    component: Evaluations,
   },
   {
     id: "faq",
@@ -21,18 +23,22 @@ export const navLinks = [
   {
     id: "timeline",
     title: "Timeline",
+    component: Timeline,
   },
   {
     id: "refer",
     title: "Refer",
+    component: Refer,
   },
   {
     id: "reward",
     title: "Reward",
+    component: Rewards,
   },
   {
     id: "contact",
     title: "Contact",
+    component: CustContact,
   },
 ];
 

@@ -32,7 +32,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <Link to={`/${link.id}`}>{link.title}</Link>
             </li>
           ))}
           <button className="p-2 -my-2 rounded-md bg-gray-300 text-black">

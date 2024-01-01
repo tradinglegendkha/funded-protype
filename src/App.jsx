@@ -1,18 +1,6 @@
-import {
-  Navbar,
-  Header,
-  Testimonials,
-  SupportedBrokers,
-  StarsCanvas,
-  WindCanvas,
-  WhyUs,
-  EvaluationsHeader,
-  Faq,
-  Footer,
-} from "./components";
-import { OneStepEval, EODEval } from "./constants/evalcon";
-
-import { BrowserRouter } from "react-router-dom";
+import { Navbar } from "./components";
+import { Home, Evaluations, Refer, Rewards, Timeline } from "./pages";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -21,20 +9,17 @@ function App() {
       <div className="relative z-0 bg-primary">
         <div className="bg-new-header bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <div className="relative z-0">
-            <Header />
-            {/* <WindCanvas /> */}
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/evaluations" element={<Evaluations />} />
+              <Route path="/refer" element={<Refer />} />
+              <Route path="/rewards" element={<Rewards />} />
+              <Route path="/timeline" element={<Timeline />} />
+              {/* Add other routes for other pages */}
+            </Routes>
           </div>
-          <StarsCanvas />
         </div>
-        <Testimonials />
-        <SupportedBrokers />
-        {/* social media that mentions wolf */}
-        <WhyUs />
-        <EvaluationsHeader evaluations={OneStepEval.slice(0, 3)} />
-        <EvaluationsHeader evaluations={EODEval.slice(0, 3)} />
-        <Faq />
-        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -1,3 +1,4 @@
+export { default as Home } from "./Home";
 export { default as CustContact } from "./CustContact";
 export { default as Evaluations } from "./Evaluations";
 export { default as Refer } from "./Refer";

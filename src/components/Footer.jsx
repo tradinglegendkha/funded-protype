@@ -12,10 +12,34 @@ const Footer = () => {
         <div className="max-w-xs">
           <img src={logo_horizontal} alt="logo" />
           <div className="flex gap-10 mt-5 mx-2">
-            <FaYoutube size={30} />
-            <FaDiscord size={30} />
-            <FaFacebookSquare size={30} />
-            <FaXTwitter size={30} />
+            <a
+              href="https://www.youtube.com/@elitetraderfunding"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube size={30} />
+            </a>
+            <a
+              href="https://discord.com/invite/trade-etf "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaDiscord size={30} />
+            </a>
+            <a
+              href="https://www.facebook.com/EliteTraderFunding "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookSquare size={30} />
+            </a>
+            <a
+              href="https://twitter.com/EliteTraderFund "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaXTwitter size={30} />
+            </a>
           </div>
         </div>
         <div>

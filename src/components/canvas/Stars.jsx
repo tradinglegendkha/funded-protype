@@ -10,8 +10,8 @@ const Stars = (props) => {
 
   //controls the speed of rotation
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 20;
-    ref.current.rotation.y -= delta / 20;
+    ref.current.rotation.x -= delta / 80;
+    ref.current.rotation.y -= delta / 80;
   });
 
   return (
