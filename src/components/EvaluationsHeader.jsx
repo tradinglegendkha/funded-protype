@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  OneStepEval,
-  FastTrackEval,
-  EODEval,
-  StaticEval,
-} from "../constants/evalcon";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 

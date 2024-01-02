@@ -21,6 +21,7 @@ const Navbar = () => {
             src={logo_horizontal}
             alt="logo"
             className="bg-primary w-30 h-20 object-contain"
+            onClick={() => setActive(false)}
           />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

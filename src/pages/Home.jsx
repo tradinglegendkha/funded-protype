@@ -9,6 +9,7 @@ import {
   EvaluationsHeader,
   Faq,
   Footer,
+  SeeMore,
 } from "../components";
 import { OneStepEval, EODEval } from "../constants/evalcon";
 
@@ -27,9 +28,12 @@ const Home = () => {
       {/* social media that mentions wolf */}
       <WhyUs />
       <EvaluationsHeader evaluations={OneStepEval.slice(0, 3)} />
+      <SeeMore />
       <EvaluationsHeader evaluations={EODEval.slice(0, 3)} />
+      <SeeMore />
       <Faq />
-      <Footer />
+
+      {/* <Footer /> */}
     </div>
   );
 };

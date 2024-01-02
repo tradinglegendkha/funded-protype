@@ -8,6 +8,8 @@ import WhyUs from "./WhyUs";
 import EvaluationsHeader from "./EvaluationsHeader";
 import Faq from "./Faq";
 import Footer from "./Footer";
+import SeeMore from "./SeeMore";
+import ScrollWrapper from "./ScrollWrapper";
 
 export {
   Navbar,
@@ -20,4 +22,6 @@ export {
   EvaluationsHeader,
   Faq,
   Footer,
+  SeeMore,
+  ScrollWrapper,
 };

@@ -189,7 +189,7 @@ export const StaticEval = [
     profit_target: "$2000",
     max_positions: "2 minis | 20 micros",
     borderColor: "border-fuchsia-950",
-    title: "Fast Track Evaluations",
+    title: "Static Evaluations",
     description:
       "No trailing drawdown, static minimum balance, 5 minimum days traded. Funded also has static",
     all_rules: "https://elitetraderfunding.com/static/",
@@ -215,7 +215,7 @@ export const DiamondHandsEval = [
     daily_loss: "$1500",
     max_positions: " minis | micros",
     borderColor: "border-cyan-500",
-    title: "Fast Track Evaluations",
+    title: "Diamond Hands Evaluation",
     description:
       "Allowed to hold overnight and over the weekend, 5 minimum days traded, EOD trailing drawdown, and daily loss limit. Funded follows also follows this",
     all_rules: "https://elitetraderfunding.com/diamondhands/",

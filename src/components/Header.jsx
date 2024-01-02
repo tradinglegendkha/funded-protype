@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import { styles } from "../utils/styles";
 import { BullCanvas } from "./canvas";
 import { EarthCanvas } from "./canvas";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  // const linkEvaluations =
+
   return (
     <div className="relative w-full h-screen mx-auto overflow-hidden">
       <div
@@ -41,7 +44,7 @@ const Header = () => {
             </div>
             <div className="flex text-[18px] mt-3 gap-20">
               <button className="p-3 px-[30px] bg-[#060724] rounded-xl cursor-pointer">
-                View Evaluations
+                <Link to="/evaluations">View Evaluations</Link>
               </button>
               <button className="p-3 px-[30px] bg-[#060724] rounded-xl cursor-pointer">
                 Free Trial

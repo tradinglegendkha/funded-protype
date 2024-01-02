@@ -36,7 +36,7 @@ const WhyUs = () => {
               />
               <NumberedBulletPoint
                 number="2"
-                content="Theres no time decay like in traditional options."
+                content="Theres no time decay unlike in traditional options."
               />
               <NumberedBulletPoint
                 number="3"

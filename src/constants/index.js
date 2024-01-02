@@ -14,7 +14,6 @@ export const navLinks = [
   {
     id: "evaluations",
     title: "Evaluations",
-    component: Evaluations,
   },
   {
     id: "faq",
@@ -23,22 +22,18 @@ export const navLinks = [
   {
     id: "timeline",
     title: "Timeline",
-    component: Timeline,
   },
   {
     id: "refer",
     title: "Refer",
-    component: Refer,
   },
   {
     id: "reward",
     title: "Reward",
-    component: Rewards,
   },
   {
     id: "contact",
     title: "Contact",
-    component: CustContact,
   },
 ];
 

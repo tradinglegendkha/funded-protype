@@ -40,7 +40,7 @@ const Evaluations = () => {
               className={evalbutton}
               onClick={() => handleButtonClick(EODEval)}
             >
-              End of Day Evaluations{" "}
+              End of Day Evaluations
             </button>
             <button
               className={evalbutton}
@@ -52,7 +52,7 @@ const Evaluations = () => {
               className={evalbutton}
               onClick={() => handleButtonClick(DiamondHandsEval)}
             >
-              Diamond Hand Evaluations
+              Diamond Hand Evaluation
             </button>
           </div>
           <div className="mt-10 px-20 flex flex-wrap justify-around text-blue-800">
