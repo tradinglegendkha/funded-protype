@@ -1,7 +1,7 @@
 import React from "react";
 import {
   OneStepEval,
-  FastStepEval,
+  FastTrackEval,
   EODEval,
   StaticEval,
 } from "../constants/evalcon";
@@ -19,6 +19,10 @@ const EvaluationsHeaderCard = ({ evaluation }) => {
           <div className="text-[17px] flex justify-between">
             <p className="text-textlight">Drawdown: </p>
             {evaluation.max_drawdown}
+          </div>
+          <div className="text-[17px] flex justify-between">
+            <p className="text-textlight"> Daily Drawdown: </p>
+            {evaluation.daily_drawdown}
           </div>
           <div className="text-[17px] flex justify-between">
             <p className="text-textlight">Profit Target: </p>
@@ -47,7 +51,7 @@ const EvaluationsHeader = ({ evaluations }) => {
   const { title, description, all_rules } = evaluations[0];
 
   return (
-    <div className="px-20 py-20">
+    <div className="px-20 py-10">
       <div className="my-5 leading-9">
         <h1 className="text-5xl">{title}</h1>
         <p className="flex justify-between">

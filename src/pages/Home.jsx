@@ -14,9 +14,8 @@ import { OneStepEval, EODEval } from "../constants/evalcon";
 
 const Home = () => {
   return (
-    <div className="relative z-0 bg-primary">
+    <div>
       <div className="bg-new-header bg-cover bg-no-repeat bg-center">
-        <Navbar />
         <div className="relative z-0">
           <Header />
           {/* <WindCanvas /> */}
